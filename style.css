@@ -45,6 +45,7 @@ html, body {
   color: var(--text-primary);
   font-family: var(--font-body);
   overflow-x: hidden;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -509,31 +510,230 @@ body {
   transform: translateX(4px);
 }
 
-/* Footer */
-.footer {
+/* ==========================================================================
+   CORPORATE FOOTER (Keys Partners 3-Column Footer)
+   ========================================================================== */
+
+.site-footer {
+  position: relative;
+  z-index: 5;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.5rem 0 0.5rem 0;
-  animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both;
+  background-color: #000000;
+  border-top: 1px solid rgba(212, 175, 55, 0.18);
+  padding: 4.5rem 2rem 2.2rem 2rem;
+  box-shadow: 0 -20px 45px rgba(0, 0, 0, 0.7);
+  font-family: var(--font-body);
 }
 
-.footer-content {
+.site-footer-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Top 3-Column Grid */
+.footer-top-grid {
+  display: grid;
+  grid-template-columns: 2fr 1.15fr 0.85fr;
+  gap: clamp(2rem, 4.5vw, 5rem);
+  align-items: start;
+}
+
+/* Column 1: O spoločnosti & Siete */
+.footer-col-about {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-brand-row {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
-  font-size: 0.72rem;
-  letter-spacing: 0.1em;
-  color: rgba(142, 155, 174, 0.65);
-  text-align: center;
+  gap: 0.9rem;
+  margin-bottom: 1.4rem;
+}
+
+.footer-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 16px rgba(212, 175, 55, 0.45);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+}
+
+.footer-brand-name {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: #FFFFFF;
+  letter-spacing: -0.01em;
+}
+
+.footer-social-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-left: 0.6rem;
+}
+
+.footer-social-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #14171E;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.footer-social-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.footer-social-btn:hover,
+.footer-social-btn:focus-visible {
+  background: var(--gold-primary);
+  border-color: var(--gold-primary);
+  color: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.45);
+}
+
+.footer-desc {
+  font-size: 0.88rem;
+  line-height: 1.72;
+  color: #B5BCC8;
+  font-weight: 400;
+  text-align: justify;
+}
+
+/* Headings with Gold Line */
+.footer-heading {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #FFFFFF;
+  letter-spacing: -0.01em;
+}
+
+.footer-heading-line {
+  width: 44px;
+  height: 2px;
+  background: var(--gold-primary);
+  margin: 0.6rem 0 1.5rem 0;
+  border-radius: 2px;
+}
+
+/* Column 2: Sídlo spoločnosti (Kontakty) */
+.footer-contact-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  color: #D1D5DB;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.footer-contact-icon {
+  color: var(--gold-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+}
+
+.footer-contact-icon svg {
+  width: 17px;
+  height: 17px;
+}
+
+.footer-contact-text {
+  color: #E2E8F0;
+}
+
+.footer-contact-link {
+  color: #E2E8F0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-contact-link:hover,
+.footer-contact-link:focus-visible {
+  color: var(--gold-primary);
+}
+
+/* Column 3: Naša pôsobnosť */
+.footer-regions-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  padding: 0;
+  margin: 0;
+  color: #CBD5E1;
+  font-size: 0.92rem;
+}
+
+.footer-regions-list li {
+  transition: color 0.25s ease;
+}
+
+.footer-regions-list li:hover {
+  color: #FFFFFF;
+}
+
+/* Bottom Copyright & Legal Bar */
+.footer-bottom-bar {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 1.8rem;
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
+  gap: 1.2rem;
 }
 
-.footer-divider {
-  color: var(--gold-dark);
-  opacity: 0.5;
+.footer-bottom-copy {
+  font-size: 0.8rem;
+  color: #8A94A6;
+  line-height: 1.6;
+}
+
+.footer-bottom-links {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  flex-wrap: wrap;
+}
+
+.footer-legal-link {
+  color: #8A94A6;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-legal-link:hover,
+.footer-legal-link:focus-visible {
+  color: var(--gold-primary);
 }
 
 /* ==========================================================================
@@ -628,14 +828,42 @@ body {
   .bubbles-intro {
     margin-bottom: 1.8rem;
   }
+}
 
-  .footer-content {
-    flex-direction: column;
-    gap: 0.3rem;
+@media (max-width: 1024px) {
+  .footer-top-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem 2.5rem;
   }
+  .footer-col-about {
+    grid-column: 1 / -1;
+  }
+}
 
-  .footer-divider {
-    display: none;
+@media (max-width: 768px) {
+  .site-footer {
+    padding: 3.5rem 1.25rem 2rem 1.25rem;
+  }
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .footer-brand-row {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+  .footer-desc {
+    text-align: left;
+  }
+  .footer-bottom-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+  }
+  .footer-bottom-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
   }
 }
 
