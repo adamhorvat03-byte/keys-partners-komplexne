@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reality • Keys Partners</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .subpage-container {
+      max-width: 860px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 4rem 1.5rem;
+      position: relative;
+      z-index: 2;
+    }
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.75rem 1.6rem;
+      border-radius: 9999px;
+      border: 1px solid var(--gold-border);
+      background: rgba(14, 25, 46, 0.7);
+      color: var(--gold-primary);
+      text-decoration: none;
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: var(--transition-smooth);
+      margin-bottom: 3.5rem;
+    }
+    .back-btn:hover {
+      border-color: var(--gold-border-hover);
+      background: rgba(22, 38, 70, 0.9);
+      box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
+      transform: translateX(-4px);
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold-primary);
+      margin-bottom: 1rem;
+    }
+    .subpage-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      background: linear-gradient(135deg, #FFFFFF 0%, var(--gold-light) 50%, var(--gold-primary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1.5rem;
+    }
+    .subpage-desc {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      line-height: 1.8;
+      max-width: 640px;
+      margin: 0 auto 3rem auto;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      text-align: left;
+    }
+    .feature-card {
+      background: rgba(14, 25, 46, 0.65);
+      border: 1px solid var(--gold-border);
+      border-radius: 16px;
+      padding: 1.8rem;
+      backdrop-filter: blur(12px);
+      transition: var(--transition-smooth);
+    }
+    .feature-card:hover {
+      border-color: var(--gold-border-hover);
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 20px rgba(212, 175, 55, 0.2);
+    }
+    .feature-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      color: var(--gold-light);
+      margin-bottom: 0.6rem;
+      letter-spacing: 0.08em;
+    }
+    .feature-card p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="ambient-glow glow-top"></div>
+  <div class="ambient-glow glow-center"></div>
+  <div class="blueprint-grid"></div>
+
+  <div class="subpage-container">
+    <a href="../index.html" class="back-btn" id="homeLink">
+      <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+        <path d="M16 10H4M4 10L9 5M4 10L9 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Späť na úvod
+    </a>
+
+    <div>
+      <span class="badge">Sektor Nehnuteľností</span>
+      <h1 class="subpage-title">Reality</h1>
+      <p class="subpage-desc">
+        Sprostredkovanie predaja, kúpy a prenájmu prémiových rezidenčných a komerčných nehnuteľností s dôrazom na diskrétnosť, právnu istotu a maximálnu investičnú hodnotu.
+      </p>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>Prémiové Rezidencie</h3>
+          <p>Exkluzívne byty, vily a pozemky vo vyhľadávaných a bonitných lokalitách.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Komerčné Priestory</h3>
+          <p>Kancelárske budovy, retailové parky a logistické celky pripravené na prevádzku.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Investičné Poradenstvo</h3>
+          <p>Detailné analýzy výnosnosti, štruktúrovanie transakcií a správa portfólia.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    if (window.location.protocol !== 'file:') {
+      document.getElementById('homeLink').setAttribute('href', '/');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# Build outputs
+dist/
+build/
+.output/
+
+# Netlify
+.netlify/
+
+# OS and Editor files
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/

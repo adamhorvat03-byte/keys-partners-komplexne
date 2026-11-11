@@ -1,0 +1,29 @@
+[build]
+  publish = "."
+
+# Presmerovanie Reality priamo na existujúci web Keys Partners
+[[redirects]]
+  from = "/reality"
+  to = "https://keyspartner.netlify.app/"
+  status = 301
+  force = true
+
+# Čisté URL trasy pre Developing a Inžiniering
+[[redirects]]
+  from = "/developing"
+  to = "/developing/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/inziniering"
+  to = "/inziniering/index.html"
+  status = 200
+
+# Bezpečnostné a výkonnostné HTTP hlavičky
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
