@@ -17,6 +17,10 @@ build/
 # Netlify
 .netlify/
 
+# Local archive & helper scripts
+*.zip
+*.bat
+
 # OS and Editor files
 .DS_Store
 Thumbs.db
