@@ -77,9 +77,8 @@ body {
   z-index: 2;
   display: flex;
   flex-direction: column;
-  min-height: 88vh;
-  justify-content: space-between;
-  padding: 2.2rem 2.5rem 3.5rem 2.5rem;
+  justify-content: flex-start;
+  padding: 1.6rem 2.5rem 1.25rem 2.5rem;
   max-width: 1360px;
   margin: 0 auto;
   width: 100%;
@@ -97,7 +96,7 @@ body {
   align-items: center;
   gap: 2rem;
   width: 100%;
-  padding-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
   background: transparent;
   animation: fadeInDown 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
@@ -208,33 +207,32 @@ body {
 }
 
 /* ==========================================================================
-   3. MAIN HEADING (AIRY & ELEGANT THIN FONT)
+   3. MAIN HEADING (BOLD & CONFIDENT TYPOGRAPHY)
    ========================================================================== */
 
 .main-content {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  padding: 3.5rem 0 2.5rem 0;
+  padding: 0.75rem 0 1rem 0;
   width: 100%;
 }
 
 .hero-intro {
   max-width: 920px;
-  margin: 0 auto 3.2rem auto;
+  margin: 0 auto 2rem auto;
   text-align: center;
   animation: fadeIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
 }
 
 .main-heading {
   font-family: var(--font-heading);
-  font-size: clamp(1.35rem, 2.3vw, 2.05rem);
-  font-weight: 300;
-  line-height: 1.45;
-  letter-spacing: 0.025em;
-  color: #F8FAFC;
+  font-size: clamp(1.45rem, 2.35vw, 2.15rem);
+  font-weight: 600;
+  line-height: 1.38;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
   text-wrap: balance;
 }
 
@@ -502,7 +500,7 @@ body {
   width: 100%;
   background: transparent;
   color: #E2E8F0;
-  padding: 64px 0 0;
+  padding: 24px 0 0;
   font-family: var(--font-body);
 }
 
@@ -762,7 +760,7 @@ body {
 
 @media (max-width: 1024px) {
   .page-container {
-    padding: 1.8rem 1.8rem 3.5rem 1.8rem;
+    padding: 1.4rem 1.8rem 1.25rem 1.8rem;
   }
 
   .divisions-grid {
@@ -798,14 +796,14 @@ body {
 @media (max-width: 768px) {
   .page-container {
     min-height: auto;
-    padding: 1.4rem 1.25rem 3rem 1.25rem;
+    padding: 1.2rem 1.25rem 1.25rem 1.25rem;
   }
 
   .header {
     flex-direction: column;
     align-items: flex-start;
     gap: 1.15rem;
-    padding-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
   }
 
   .brand {
@@ -832,16 +830,16 @@ body {
   }
 
   .main-content {
-    padding: 2.4rem 0 1.5rem 0;
+    padding: 0.75rem 0 1rem 0;
   }
 
   .hero-intro {
-    margin-bottom: 2.2rem;
+    margin-bottom: 1.6rem;
   }
 
   .main-heading {
-    font-size: 1.25rem;
-    line-height: 1.45;
+    font-size: 1.32rem;
+    line-height: 1.4;
   }
 
   .footer-top-grid {
@@ -851,7 +849,7 @@ body {
   }
 
   .site-footer {
-    padding: 56px 0 0;
+    padding: 24px 0 0;
   }
 
   .footer-bottom-links {
