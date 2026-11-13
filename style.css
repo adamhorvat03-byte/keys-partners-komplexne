@@ -78,7 +78,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 1.6rem 2.5rem 1.25rem 2.5rem;
+  padding: 1.8rem 2.5rem 3.5rem 2.5rem;
   max-width: 1360px;
   margin: 0 auto;
   width: 100%;
@@ -218,7 +218,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 72px 0 2rem 0;
+  padding: 135px 0 70px 0;
   width: 100%;
 }
 
@@ -503,7 +503,7 @@ body {
   width: 100%;
   background: transparent;
   color: #E2E8F0;
-  padding: 24px 0 0;
+  padding: 40px 0 0;
   font-family: var(--font-body);
 }
 
@@ -771,7 +771,11 @@ body {
 
 @media (max-width: 1024px) {
   .page-container {
-    padding: 1.4rem 1.8rem 1.25rem 1.8rem;
+    padding: 1.4rem 1.8rem 2.5rem 1.8rem;
+  }
+
+  .main-content {
+    padding: 95px 0 50px 0;
   }
 
   .divisions-grid {
@@ -807,7 +811,7 @@ body {
 @media (max-width: 768px) {
   .page-container {
     min-height: auto;
-    padding: 1.2rem 1.25rem 1.25rem 1.25rem;
+    padding: 1.2rem 1.25rem 2.2rem 1.25rem;
   }
 
   .header {
@@ -841,7 +845,7 @@ body {
   }
 
   .main-content {
-    padding: 44px 0 1.5rem 0;
+    padding: 70px 0 40px 0;
   }
 
   .hero-intro {
@@ -860,7 +864,7 @@ body {
   }
 
   .site-footer {
-    padding: 24px 0 0;
+    padding: 32px 0 0;
   }
 
   .footer-bottom-links {
