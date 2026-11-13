@@ -232,7 +232,7 @@ body {
 
 .hero-intro {
   max-width: 920px;
-  margin: 0 auto 2rem auto;
+  margin: 0 auto 65px auto;
   text-align: center;
   animation: fadeIn 1s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
 }
@@ -790,6 +790,10 @@ body {
     padding: 70px 0 50px 0;
   }
 
+  .hero-intro {
+    margin-bottom: 50px;
+  }
+
   .divisions-grid {
     grid-template-columns: 1fr;
     max-width: 620px;
@@ -861,7 +865,7 @@ body {
   }
 
   .hero-intro {
-    margin-bottom: 1.6rem;
+    margin-bottom: 42px;
   }
 
   .main-heading {
