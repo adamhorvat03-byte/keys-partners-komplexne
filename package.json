@@ -2,13 +2,13 @@
   "name": "keys-partners-hub",
   "version": "1.0.0",
   "private": true,
-  "description": "Keys Partners - Úvodná rázcestníková stránka: Reality, Developing a Inžiniering",
+  "description": "Keys Partners - Úvodná rázcestníková stránka: Reality, Development a Inžiniering",
   "scripts": {
     "build": "echo 'Static build complete - no build step required'"
   },
   "keywords": [
     "reality",
-    "developing",
+    "development",
     "inziniering",
     "keys-partners"
   ],

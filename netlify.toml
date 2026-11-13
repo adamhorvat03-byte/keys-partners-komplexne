@@ -8,10 +8,15 @@
   status = 301
   force = true
 
-# Čisté URL trasy pre Developing a Inžiniering
+# Čisté URL trasy pre Development a Inžiniering
+[[redirects]]
+  from = "/development"
+  to = "/development/index.html"
+  status = 200
+
 [[redirects]]
   from = "/developing"
-  to = "/developing/index.html"
+  to = "/development/index.html"
   status = 200
 
 [[redirects]]
