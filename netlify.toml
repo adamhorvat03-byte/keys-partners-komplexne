@@ -1,17 +1,28 @@
 [build]
   publish = "."
 
-# Presmerovanie Reality priamo na existujúci web Keys Partners
+# Proxy rewrite pre divíziu Reality na samostatný projekt Keys Partners
+[[redirects]]
+  from = "/reality/*"
+  to = "https://keyspartner.netlify.app/:splat"
+  status = 200
+  force = true
+
 [[redirects]]
   from = "/reality"
   to = "https://keyspartner.netlify.app/"
-  status = 301
+  status = 200
   force = true
 
-# Čisté URL trasy pre Development a Inžiniering
+# Čisté URL trasy pre Development a Property Management
 [[redirects]]
   from = "/development"
   to = "/development/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/management"
+  to = "/management/index.html"
   status = 200
 
 [[redirects]]
@@ -21,7 +32,7 @@
 
 [[redirects]]
   from = "/inziniering"
-  to = "/inziniering/index.html"
+  to = "/management/index.html"
   status = 200
 
 # Bezpečnostné a výkonnostné HTTP hlavičky

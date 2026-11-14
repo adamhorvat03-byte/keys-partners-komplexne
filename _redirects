@@ -1,0 +1,5 @@
+/reality/*   https://keyspartner.netlify.app/:splat   200
+/reality     https://keyspartner.netlify.app/         200
+
+/development   /development/index.html   200
+/management    /management/index.html    200
